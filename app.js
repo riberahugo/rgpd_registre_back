@@ -19,16 +19,10 @@ app.get('/', function (req, res) {
 var MailController = require(__root + 'mail/MailController');
 app.use('/api/mail', MailController);
 
-var Invitation = require(__root + 'invitation/invitation');
-app.use('/api/invitation', Invitation);
-
 var User = require(__root + 'user/UserController');
 app.use('/api/user', User);
 
 var Auth = require(__root + 'auth/AuthController');
 app.use('/api/auth', Auth);
-
-var Event = require(__root + 'event/EventController');
-app.use('/api/event', Event);
 
 module.exports = app;

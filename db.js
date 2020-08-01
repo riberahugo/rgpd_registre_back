@@ -4,7 +4,7 @@ var connection=mysql.createConnection({
   host:'localhost',
   user:'root',
   password:'root',
-  database:'mapi',
+  database:'rgpd_registre',
   charset : 'utf8mb4',
   port: 8889
 });
